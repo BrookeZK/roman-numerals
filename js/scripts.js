@@ -1,10 +1,19 @@
 //Business Logic
 var isNumOnethruThree = function(userInput) {
   if (userInput === 1) {
-    return userInput = "I";
+    userInput = "I"
+    return userInput;
+  } else if (userInput < 4) {
+    var userInputNum = userInput
+    userInput = "I"
+    userInput = userInput.repeat(userInputNum);
+    return userInput;
+  } else {
+    return false;
   }
-}
-// console.log(isNumOnethruThree);
+};
+console.log(isNumOnethruThree(4));
+
 
 
 
@@ -17,5 +26,6 @@ $(document).ready(function(){
     console.log(userInput);
     var result = isNumOnethruThree(userInput);
     console.log(result);
+    $("#romanNumeral").text(result);
   });
 });
