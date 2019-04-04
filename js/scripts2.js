@@ -4,6 +4,9 @@ var romanNum = ["I", "IV", "V", "IX", "X", "XL", "L", "XC", "C", "CD", "D", "CM"
 
 var output = function(userInput) {
   var romanNumOutput = "";
+  if (userInput < 1 || userInput > 3999){
+    alert("Please enter a valid number.");
+  }
   for (var i = arabicNum.length-1; i >= 0; i--) {
     while (userInput >= arabicNum[i]) {
 
