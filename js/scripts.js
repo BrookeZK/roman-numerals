@@ -1,13 +1,13 @@
 //Business Logic
 var isNumOnethruThree = function(userInput) {
+  var romanNumeral = "I"
   if (userInput === 1) {
-    userInput = "I"
-    return userInput;
+    return romanNumeral;
   } else if (userInput < 4) {
-    var userInputNum = userInput
-    userInput = "I"
-    userInput = userInput.repeat(userInputNum);
-    return userInput;
+    // var userInputNum = userInput
+    // userInput = "I"
+    romanNumeral = romanNumeral.repeat(userInput);
+    return romanNumeral;
   } else {
     return false;
   }
