@@ -37,6 +37,23 @@ console.log(isNumFourThruEight(7));
 console.log(isNumFourThruEight(8));
 console.log(isNumFourThruEight(9));
 
+var ifNumNinethruFifteen = function(userInput) {
+  if (userInput === 9 ) {
+    return aye + ex;
+  } else if (userInput < 14) {
+    var num = userInput - 10;
+    return ex + aye.repeat(num);
+  } else {
+    return false
+  }
+}
+
+console.log(ifNumNinethruFifteen(9));
+console.log(ifNumNinethruFifteen(10));
+console.log(ifNumNinethruFifteen(11));
+console.log(ifNumNinethruFifteen(12));
+console.log(ifNumNinethruFifteen(13));
+console.log(ifNumNinethruFifteen(14));
 
 // User Interface Logic
 $(document).ready(function(){
