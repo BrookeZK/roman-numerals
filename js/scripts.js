@@ -37,7 +37,7 @@ console.log(isNumFourThruEight(7));
 console.log(isNumFourThruEight(8));
 console.log(isNumFourThruEight(9));
 
-var ifNumNinethruFifteen = function(userInput) {
+var ifNumNinethruThirteen = function(userInput) {
   if (userInput === 9 ) {
     return aye + ex;
   } else if (userInput < 14) {
@@ -48,12 +48,30 @@ var ifNumNinethruFifteen = function(userInput) {
   }
 }
 
-console.log(ifNumNinethruFifteen(9));
-console.log(ifNumNinethruFifteen(10));
-console.log(ifNumNinethruFifteen(11));
-console.log(ifNumNinethruFifteen(12));
-console.log(ifNumNinethruFifteen(13));
-console.log(ifNumNinethruFifteen(14));
+console.log(ifNumNinethruThirteen(9));
+console.log(ifNumNinethruThirteen(10));
+console.log(ifNumNinethruThirteen(11));
+console.log(ifNumNinethruThirteen(12));
+console.log(ifNumNinethruThirteen(13));
+console.log(ifNumNinethruThirteen(14));
+
+var ifNumFourteenthruEighteen = function(userInput) {
+  if (userInput === 14 ) {
+    return ex + aye + vee;
+  } else if (userInput < 19) {
+    var num = userInput - 15;
+    return ex + vee + aye.repeat(num);
+  } else {
+    return false
+  }
+}
+
+console.log(ifNumFourteenthruEighteen(14));
+console.log(ifNumFourteenthruEighteen(15));
+console.log(ifNumFourteenthruEighteen(16));
+console.log(ifNumFourteenthruEighteen(17));
+console.log(ifNumFourteenthruEighteen(18));
+console.log(ifNumFourteenthruEighteen(19));
 
 // User Interface Logic
 $(document).ready(function(){
